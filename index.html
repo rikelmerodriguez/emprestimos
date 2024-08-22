@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Aprovação de Empréstimos Engenharia Aulas 03</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Aprovação de Empréstimos: Aula 03</h1>
+        <form id="loanForm">
+            <label for="income">Renda Mensal (R$):</label>
+            <input type="number" id="income" name="income" required>
+
+            <label for="loanAmount">Valor do Empréstimo (R$):</label>
+            <input type="number" id="loanAmount" name="loanAmount" required>
+
+            <label for="creditHistory">Histórico de Crédito:</label>
+            <select id="creditHistory" name="creditHistory" required>
+                <option value="bom">Bom</option>
+                <option value="ruim">Ruim</option>
+            </select>
+
+            <label for="jobStability">Estabilidade no Emprego (anos):</label>
+            <input type="number" id="jobStability" name="jobStability" required>
+
+            <label for="downPayment">Valor da Entrada (R$):</label>
+            <input type="number" id="downPayment" name="downPayment" required>
+
+            <button type="button" onclick="analyzeLoan()">Analisar Empréstimo</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
